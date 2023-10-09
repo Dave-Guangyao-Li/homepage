@@ -97,7 +97,8 @@ function App() {
               .
             </span>
           </div>
-          <div className='w-full h-96 flex justify-evenly items-center bg-indigo-100 text-center mt-[6rem]'>
+          <div className='relative w-full h-[34rem] flex justify-evenly items-cente text-center mt-[6rem]'>
+            <div className='absolute inset-0 bg-[#6A7EF9] opacity-25'></div>
             <div className='flex flex-col justify-center items-center w-1/3 h-full gap-10'>
               {/* <img
                 className='w-48 h-48'
