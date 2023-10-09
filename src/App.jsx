@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <div className='background w-full relative bg-zinc-100'>
-        <div className='fixed nav-bar w-full h-12 bg-neutral-800 text-zinc-100 text-sm flex justify-center items-center p-4'>
+        <div className='fixed nav-bar w-full h-12 bg-neutral-800 text-zinc-100 text-sm flex justify-center items-center p-4 z-10'>
           <div className='flex-grow'></div> {/* Empty space-filling div */}
           <div className='menu-items flex gap-5 justify-center'>
             <span className='px-6 py-2'>Feature</span>
