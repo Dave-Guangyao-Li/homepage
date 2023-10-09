@@ -1,7 +1,27 @@
 import './App.css'
+import ScriptIcon from './assets/svgs/script.svg?react'
+import SlidesIcon from './assets/svgs/slides.svg?react'
+import MedalIcon from './assets/svgs/medal-bronze.svg?react'
 import Footer from './components/Footer'
 import PricingPlans from './components/PricingPlans'
+import { pricingPlansMonthlyData } from './data/pricingPlansData'
+import { pricingPlansYearlyData } from './data/pricingPlansData'
+import { useState } from 'react'
 function App() {
+  const [isYearlyData, setIsYearlyData] = useState(false)
+  const [pricingPlansData, setPricingPlansData] = useState(
+    pricingPlansMonthlyData
+  )
+
+  const handleMonthlyClick = () => {
+    setIsYearlyData(false)
+    setPricingPlansData(pricingPlansMonthlyData)
+  }
+
+  const handleYearlyClick = () => {
+    setIsYearlyData(true)
+    setPricingPlansData(pricingPlansYearlyData)
+  }
   return (
     <>
       <div className='background w-full relative bg-zinc-100'>
@@ -25,10 +45,11 @@ function App() {
           </div>
 
           <div className='w-80 h-16 bg-white rounded-2xl border border-red-400 flex items-center'>
-            <img
+            {/* <img
               className='w-12 h-12 ml-4'
-              src='https://via.placeholder.com/328x73'
-            />
+              src='src/assets/imgs/medal-bronze.png'
+            /> */}
+            <MedalIcon className='w-12 h-12 ml-4' />
             <div className='ml-4 flex flex-col'>
               <div className="w-28 h-5 text-red-400 text-xs font-extrabold font-['Creato Display'] leading-loose tracking-tight">
                 PRODUCT HUNT
@@ -78,35 +99,77 @@ function App() {
           </div>
           <div className='w-full h-96 flex justify-evenly items-center bg-indigo-100 text-center mt-[6rem]'>
             <div className='flex flex-col justify-center items-center w-1/3 h-full gap-10'>
-              <img
+              {/* <img
                 className='w-48 h-48'
                 src='https://via.placeholder.com/328x73'
-              />
+              /> */}
+              <ScriptIcon />
               <div className="text-center text-gray-700 text-4xl font-medium font-['Creato Display'] leading-10 tracking-wide">
                 Script
               </div>
             </div>
             <div className='flex flex-col border-r-2 border-l-2 border-slate-300 justify-center items-center w-1/3 h-full gap-10'>
-              <img
-                className='w-48 h-48'
-                src='https://via.placeholder.com/328x73'
-              />
+              {/* <img className='w-48 h-48' src='src/imgs/medal-bronze.png' /> */}
+              <SlidesIcon />
               <div className="text-center text-gray-700 text-4xl font-medium font-['Creato Display'] leading-10 tracking-wide">
                 Slides
               </div>
             </div>
             <div className='flex flex-col justify-center items-center w-1/3 h-full gap-10'>
-              <img
+              {/* <img
                 className='w-48 h-48'
                 src='https://via.placeholder.com/328x73'
-              />
+              /> */}
+              <SlidesIcon />
               <div className="text-center text-gray-700 text-4xl font-medium font-['Creato Display'] leading-10 tracking-wide">
                 Video
               </div>
             </div>
           </div>
         </div>
-        <PricingPlans />
+
+        <div className='mt-[12rem] flex flex-col justify-center items-center'>
+          <div className="w-[60rem] h-56 text-center text-zinc-900 text-7xl font-medium font-['Creato Display'] leading-[6.25rem]">
+            Turning your knowledge <br />
+            into stories worth sharing.{' '}
+          </div>
+          <div className='w-56 h-14 px-8 py-1 bg-gradient-to-b from-blue-950 to-slate-950 rounded-lg shadow border border-blue-700 flex-col justify-center items-center gap-2.5 inline-flex'>
+            <div className="w-40 h-14 text-center text-zinc-100 text-xl font-medium font-['Creato Display'] capitalize leading-10 tracking-wide">
+              Dive in Today
+            </div>
+          </div>
+          <div className='w-[80rem] flex justify-end items-center'>
+            <div className='billing-options flex justify-center items-center rounded-xl bg-Grey-100'>
+              <div
+                className='billing-option text-[1rem] px-2 py-2'
+                onClick={handleMonthlyClick}
+              >
+                <span
+                  className={`rounded-md ${
+                    isYearlyData ? '' : 'bg-Grey-50'
+                  } px-[1rem] py-[0.1rem] font-medium`}
+                >
+                  Monthly billing
+                </span>
+              </div>
+              <div
+                className='billing-option text-[1rem] px-2 py-2'
+                onClick={handleYearlyClick}
+              >
+                <span
+                  className={`rounded-md px-[1rem] py-[0.1rem] text-Grey-600 ${
+                    isYearlyData ? 'bg-Grey-50' : ''
+                  } font-normal `}
+                >
+                  Yearly Billing (save 17%)
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <PricingPlans pricingPlansData={pricingPlansData} />
+        </div>
+
         <Footer />
       </div>
     </>
