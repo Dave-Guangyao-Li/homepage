@@ -18,22 +18,40 @@ function App() {
           </div>
         </div>
 
-        <div className='text-center text-neutral-900 text-8xl leading-[120px]'>
-          Transform Knowledge
-        </div>
+        <div className='intro-section flex flex-col justify-center items-center gap-4'>
+          <div className='text-center text-neutral-900 text-8xl leading-[120px] pt-32'>
+            Transform Knowledge
+          </div>
 
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quasi
-          distinctio neque repellat facere nemo reiciendis aliquid, accusamus,
-          provident tempore ex laborum. Nihil porro, magnam dolore neque
-          asperiores minima reprehenderit. Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit. Voluptas dolore minima voluptatem eius
-          deleniti nisi cupiditate, laborum porro alias, eos hic? Error eligendi
-          magnam cum blanditiis ipsa tempora repudiandae quia. Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Voluptatem distinctio
-          veritatis, voluptate at autem numquam facilis, recusandae tempora,
-          necessitatibus commodi sed temporibus dicta quidem libero rerum
-          deserunt corrupti. Aspernatur, iste.
+          <div className='w-80 h-16 bg-white rounded-2xl border border-red-400 flex items-center'>
+            <img
+              className='w-12 h-12 ml-4'
+              src='https://via.placeholder.com/328x73'
+            />
+            <div className='ml-4 flex flex-col'>
+              <div className="w-28 h-5 text-red-400 text-xs font-extrabold font-['Creato Display'] leading-loose tracking-tight">
+                PRODUCT HUNT
+              </div>
+              <div className="w-52 h-8 text-red-400 text-xl font-bold font-['Creato Display'] leading-10 tracking-tight">
+                #3 Product of the Day
+              </div>
+            </div>
+          </div>
+          <div className='w-96 h-14 text-center text-neutral-900 text-3xl leading-10 tracking-wide'>
+            Refine the Raw by AI
+          </div>
+          <div className='text-center'>
+            <span className='text-gray-700 text-xl font-normal leading-loose tracking-wide'>
+              Transform fragmented information or curiosity <br /> sparkles into
+            </span>
+            <span className='text-gray-700 text-xl font-bold leading-loose tracking-wide'>
+              {' '}
+              ready-to-use content
+            </span>
+            <span className='text-gray-700 text-xl font-normal leading-loose tracking-wide'>
+              .
+            </span>
+          </div>
         </div>
       </div>
     </>
