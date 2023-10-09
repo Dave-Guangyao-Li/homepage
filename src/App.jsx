@@ -1,5 +1,6 @@
 import './App.css'
-
+import Footer from './components/Footer'
+import PricingPlans from './components/PricingPlans'
 function App() {
   return (
     <>
@@ -53,6 +54,60 @@ function App() {
             </span>
           </div>
         </div>
+        <div className='mt-[12rem] flex flex-col justify-center items-center'>
+          <div className="w-[70rem] h-28 text-center text-zinc-900 text-7xl font-medium font-['Creato Display'] leading-10 px-4 py-2">
+            Multifaceted Outputs
+          </div>
+          <div className='w-[46rem] text-center'>
+            <span className="text-neutral-800 text-xl font-normal font-['Creato Display'] leading-loose tracking-wide">
+              Showcase your ideas across diverse formats, ensuring each piece of{' '}
+            </span>
+            <span className="text-neutral-800 text-xl font-bold font-['Creato Display'] leading-loose tracking-wide">
+              knowledge
+            </span>
+            <span className="text-neutral-800 text-xl font-normal font-['Creato Display'] leading-loose tracking-wide">
+              {' '}
+              shines in its{' '}
+            </span>
+            <span className="text-neutral-800 text-xl font-bold font-['Creato Display'] leading-loose tracking-wide">
+              best light
+            </span>
+            <span className="text-neutral-800 text-xl font-normal font-['Creato Display'] leading-loose tracking-wide">
+              .
+            </span>
+          </div>
+          <div className='w-full h-96 flex justify-evenly items-center bg-indigo-100 text-center mt-[6rem]'>
+            <div className='flex flex-col justify-center items-center w-1/3 h-full gap-10'>
+              <img
+                className='w-48 h-48'
+                src='https://via.placeholder.com/328x73'
+              />
+              <div className="text-center text-gray-700 text-4xl font-medium font-['Creato Display'] leading-10 tracking-wide">
+                Script
+              </div>
+            </div>
+            <div className='flex flex-col border-r-2 border-l-2 border-slate-300 justify-center items-center w-1/3 h-full gap-10'>
+              <img
+                className='w-48 h-48'
+                src='https://via.placeholder.com/328x73'
+              />
+              <div className="text-center text-gray-700 text-4xl font-medium font-['Creato Display'] leading-10 tracking-wide">
+                Slides
+              </div>
+            </div>
+            <div className='flex flex-col justify-center items-center w-1/3 h-full gap-10'>
+              <img
+                className='w-48 h-48'
+                src='https://via.placeholder.com/328x73'
+              />
+              <div className="text-center text-gray-700 text-4xl font-medium font-['Creato Display'] leading-10 tracking-wide">
+                Video
+              </div>
+            </div>
+          </div>
+        </div>
+        <PricingPlans />
+        <Footer />
       </div>
     </>
   )
