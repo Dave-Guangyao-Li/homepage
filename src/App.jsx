@@ -1,6 +1,7 @@
 import './App.css'
 import ScriptIcon from './assets/svgs/script.svg?react'
 import SlidesIcon from './assets/svgs/slides.svg?react'
+import VideoIcon from './assets/svgs/video.svg?react'
 import MedalIcon from './assets/svgs/medal-bronze.svg?react'
 import Footer from './components/Footer'
 import PricingPlans from './components/PricingPlans'
@@ -97,8 +98,8 @@ function App() {
               .
             </span>
           </div>
-          <div className='relative w-full h-[34rem] flex justify-evenly items-cente text-center mt-[6rem]'>
-            <div className='absolute inset-0 bg-[#6A7EF9] opacity-25'></div>
+          <div className='relative w-full h-[34rem] flex justify-evenly items-cente text-center mt-[6rem] bg-[#E3E9FF]'>
+            {/* <div className='absolute inset-0 bg-[#E3E9FF] opacity-30'></div> */}
             <div className='flex flex-col justify-center items-center w-1/3 h-full gap-10'>
               {/* <img
                 className='w-48 h-48'
@@ -121,7 +122,7 @@ function App() {
                 className='w-48 h-48'
                 src='https://via.placeholder.com/328x73'
               /> */}
-              <SlidesIcon />
+              <VideoIcon />
               <div className="text-center text-gray-700 text-4xl font-medium font-['Creato Display'] leading-10 tracking-wide">
                 Video
               </div>
