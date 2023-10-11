@@ -5,6 +5,7 @@ import VideoIcon from './assets/svgs/video.svg?react'
 import MedalIcon from './assets/svgs/medal-bronze.svg?react'
 import Footer from './components/Footer'
 import PricingPlans from './components/PricingPlans'
+import MyProjectExample from './components/MyProjectExample'
 import { pricingPlansMonthlyData } from './data/pricingPlansData'
 import { pricingPlansYearlyData } from './data/pricingPlansData'
 import { useState } from 'react'
@@ -25,8 +26,9 @@ function App() {
   }
   return (
     <>
+      {/* background container */}
       <div className='background w-full relative bg-zinc-100'>
-        <div className='fixed nav-bar w-full h-12 bg-neutral-800 text-zinc-100 text-sm flex justify-center items-center p-4 z-10'>
+        <div className='fixed nav-bar w-full h-12 bg-neutral-800 text-zinc-100 text-sm flex justify-center items-center p-4 z-50'>
           <div className='flex-grow'></div> {/* Empty space-filling div */}
           <div className='menu-items flex gap-5 justify-center'>
             <span className='px-6 py-2'>Feature</span>
@@ -76,6 +78,65 @@ function App() {
             </span>
           </div>
         </div>
+
+        {/* section: Build up your personal knowledge library */}
+        <div className='relative h-[83rem] mt-[12rem] flex flex-col justify-center items-center overflow-x-hidden'>
+          <div className="mt-[12rem] w-[70rem] h-56 text-center text-zinc-900 text-7xl font-medium font-['Creato Display'] leading-[6.25rem]">
+            Build up your personal <br /> knowledge library
+          </div>
+          <div className='w-[46rem] text-center'>
+            <span className="text-neutral-800 text-xl font-bold font-['Creato Display'] leading-loose tracking-wide">
+              Curate
+            </span>
+            <span className="text-neutral-800 text-xl font-normal font-['Creato Display'] leading-loose tracking-wide">
+              ,{' '}
+            </span>
+            <span className="text-neutral-800 text-xl font-bold font-['Creato Display'] leading-loose tracking-wide">
+              organize
+            </span>
+            <span className="text-neutral-800 text-xl font-normal font-['Creato Display'] leading-loose tracking-wide">
+              , and{' '}
+            </span>
+            <span className="text-neutral-800 text-xl font-bold font-['Creato Display'] leading-loose tracking-wide">
+              access
+            </span>
+            <span className="text-neutral-800 text-xl font-normal font-['Creato Display'] leading-loose tracking-wide">
+              {' '}
+              your insights and information, all in one{' '}
+            </span>
+            <span className="text-neutral-800 text-xl font-bold font-['Creato Display'] leading-loose tracking-wide">
+              centralized hub
+            </span>
+            <span className="text-neutral-800 text-xl font-normal font-['Creato Display'] leading-loose tracking-wide">
+              {' '}
+              for continuous learning.
+            </span>
+          </div>
+          {/* my projects */}
+          <div className='relative mt-[6.25rem] w-[93rem] h-[39rem] bg-neutral-50 rounded-3xl flex flex-col px-12 py-10 gap-6'>
+            <div className='w-[28rem] opacity-95 text-neutral-800 text-3xl font-bold font-creato-medium leading-10 tracking-wider'>
+              My Projects
+            </div>
+            <MyProjectExample />
+            {/* add grey color gradient */}
+            <div className='absolute inset-0 rounded-3xl bg-gradient-to-b from-transparent to-neutral-50'></div>
+          </div>
+          <div className='absolute top-[75rem] icons-list flex justify-evenly items-center gap-12 z-10'>
+            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+          </div>
+        </div>
+
+        {/* Multifaceted Outputs */}
         <div className='mt-[12rem] flex flex-col justify-center items-center'>
           <div className="w-[70rem] h-28 text-center text-zinc-900 text-7xl font-medium font-['Creato Display'] leading-10 px-4 py-2">
             Multifaceted Outputs
@@ -130,6 +191,7 @@ function App() {
           </div>
         </div>
 
+        {/* Turning your knowledge into stories worth sharing. */}
         <div className='mt-[12rem] mb-[30rem] flex flex-col justify-center items-center'>
           <div className="w-[60rem] h-56 text-center text-zinc-900 text-7xl font-medium font-['Creato Display'] leading-[6.25rem]">
             Turning your knowledge <br />
