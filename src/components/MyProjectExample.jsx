@@ -3,7 +3,7 @@
 const MyProjectExample = () => {
   return (
     <>
-      <div className='w-[88rem] h-[411px] relative'>
+      <div className='w-[85%] h-[411px] relative'>
         <div className='w-[1402.58px] h-[37.68px] left-0 top-0 absolute bg-indigo-50 rounded-tl-[7.07px] rounded-tr-[7.07px] border border-gray-200' />
         <div className='w-[1402.58px] h-[373.32px] left-0 top-[37.68px] absolute bg-neutral-50 rounded-bl-[7.07px] rounded-br-[7.07px] border border-gray-200' />
         <div className="left-[163.70px] top-[4.71px] absolute text-indigo-300 text-base font-bold font-['Creato Display'] uppercase leading-7 tracking-wide">

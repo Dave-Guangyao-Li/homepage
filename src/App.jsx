@@ -6,9 +6,11 @@ import MedalIcon from './assets/svgs/medal-bronze.svg?react'
 import Footer from './components/Footer'
 import PricingPlans from './components/PricingPlans'
 import MyProjectExample from './components/MyProjectExample'
+import FeatureCards from './components/FeatureCards'
 import { pricingPlansMonthlyData } from './data/pricingPlansData'
 import { pricingPlansYearlyData } from './data/pricingPlansData'
 import { useState } from 'react'
+import GenerationPreview from './components/GenerationPreview'
 function App() {
   const [isYearlyData, setIsYearlyData] = useState(false)
   const [pricingPlansData, setPricingPlansData] = useState(
@@ -42,8 +44,9 @@ function App() {
           </div>
         </div>
 
+        {/* Section: Transform Knowledge */}
         <div className='intro-section flex flex-col justify-center items-center gap-4'>
-          <div className='text-center text-neutral-900 text-8xl leading-[120px] pt-32'>
+          <div className='text-center text-neutral-900 text-8xl leading-[7.5rem] pt-32'>
             Transform Knowledge
           </div>
 
@@ -54,10 +57,10 @@ function App() {
             /> */}
             <MedalIcon className='w-12 h-12 ml-4' />
             <div className='ml-4 flex flex-col'>
-              <div className="w-28 h-5 text-red-400 text-xs font-extrabold font-['Creato Display'] leading-loose tracking-tight">
+              <div className='w-28 h-5 pt-1 text-red-400 text-xs font-extrabold font-creato-medium leading-loose tracking-[0.01388rem;]'>
                 PRODUCT HUNT
               </div>
-              <div className="w-52 h-8 text-red-400 text-xl font-bold font-['Creato Display'] leading-10 tracking-tight">
+              <div className='w-60 h-8 pb-10 text-red-400 text-xl font-bold font-creato-medium leading-10 tracking-wide'>
                 #3 Product of the Day
               </div>
             </div>
@@ -77,8 +80,67 @@ function App() {
               .
             </span>
           </div>
+          {/* start for free button */}
+          <div className='w-56 h-14 px-8 py-1 bg-gradient-to-b from-blue-950 to-slate-950 rounded-lg shadow border border-blue-700 flex-col justify-center items-center gap-2.5 inline-flex'>
+            <div className='w-40 h-14 text-center text-zinc-100 text-xl font-medium font-creato-medium capitalize leading-10 tracking-wide'>
+              Start for free
+            </div>
+          </div>
+          <GenerationPreview />
         </div>
 
+        {/* section: The Master Alchemist of Knowledge Crafting */}
+        <div className='h-[83rem] flex flex-col justify-center items-center'>
+          <div className='w-[60rem] h-56 text-center text-zinc-900 text-7xl font-medium font-creato-medium leading-[6.25rem]'>
+            The Master Alchemist of <br /> Knowledge Crafting
+          </div>
+          <div className='w-[46.375rem] text-center'>
+            <span className="text-neutral-800 text-xl font-normal font-['Creato Display'] leading-loose tracking-wide">
+              From{' '}
+            </span>
+            <span className="text-neutral-800 text-xl font-bold font-['Creato Display'] leading-loose tracking-wide">
+              multi-source synthesis
+            </span>
+            <span className="text-neutral-800 text-xl font-normal font-['Creato Display'] leading-loose tracking-wide">
+              {' '}
+              to{' '}
+            </span>
+            <span className="text-neutral-800 text-xl font-bold font-['Creato Display'] leading-loose tracking-wide">
+              topic-driven content generation
+            </span>
+            <span className="text-neutral-800 text-xl font-normal font-['Creato Display'] leading-loose tracking-wide">
+              , <br />
+              achieve{' '}
+            </span>
+            <span className="text-neutral-800 text-xl font-bold font-['Creato Display'] leading-loose tracking-wide">
+              precision
+            </span>
+            <span className="text-neutral-800 text-xl font-normal font-['Creato Display'] leading-loose tracking-wide">
+              {' '}
+              in every narrative with Dr.Lambda.
+            </span>
+          </div>
+
+          {/* discord icon */}
+          <div className='mt-[3.75rem] mb-[7.5rem] w-80 h-16 bg-white rounded-2xl border border-indigo-500 flex items-center'>
+            <img
+              className='w-8 h-6 ml-4'
+              src='src/assets/imgs/discord-icon.png'
+            />
+            {/* <MedalIcon className='w-12 h-12 ml-4' /> */}
+            <div className='ml-4 flex flex-col'>
+              <div className='w-28 h-5 pt-1 text-indigo-500 text-xs font-extrabold font-creato-medium leading-loose tracking-[0.01388rem]'>
+                DISCORD
+              </div>
+              <div className='w-52 h-8 pb-10 text-indigo-500 text-xl font-bold font-creato-medium leading-10 tracking-[0.02425rem]'>
+                Join our community
+              </div>
+            </div>
+          </div>
+
+          {/* grid cards for features */}
+          <FeatureCards />
+        </div>
         {/* section: Build up your personal knowledge library */}
         <div className='relative h-[83rem] mt-[12rem] flex flex-col justify-center items-center overflow-x-hidden'>
           <div className="mt-[12rem] w-[70rem] h-56 text-center text-zinc-900 text-7xl font-medium font-['Creato Display'] leading-[6.25rem]">
