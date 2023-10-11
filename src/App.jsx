@@ -45,7 +45,7 @@ function App() {
         </div>
 
         {/* Section: Transform Knowledge */}
-        <div className='intro-section flex flex-col justify-center items-center gap-4'>
+        <div className='relative intro-section flex flex-col justify-center items-center gap-4'>
           <div className='text-center text-neutral-900 text-8xl leading-[7.5rem] pt-32'>
             Transform Knowledge
           </div>
@@ -68,7 +68,7 @@ function App() {
           <div className='w-96 h-14 text-center text-neutral-900 text-3xl leading-10 tracking-wide'>
             Refine the Raw by AI
           </div>
-          <div className='text-center'>
+          <div className='text-center mb-[5rem]'>
             <span className='text-gray-700 text-xl font-normal leading-loose tracking-wide'>
               Transform fragmented information or curiosity <br /> sparkles into
             </span>
@@ -81,7 +81,7 @@ function App() {
             </span>
           </div>
           {/* start for free button */}
-          <div className='w-56 h-14 px-8 py-1 bg-gradient-to-b from-blue-950 to-slate-950 rounded-lg shadow border border-blue-700 flex-col justify-center items-center gap-2.5 inline-flex'>
+          <div className='absolute bottom-[41rem] w-56 h-14 px-8 py-1 bg-gradient-to-b from-blue-950 to-slate-950 rounded-lg shadow border border-blue-700 flex-col justify-center items-center gap-2.5 inline-flex z-10'>
             <div className='w-40 h-14 text-center text-zinc-100 text-xl font-medium font-creato-medium capitalize leading-10 tracking-wide'>
               Start for free
             </div>
@@ -90,7 +90,7 @@ function App() {
         </div>
 
         {/* section: The Master Alchemist of Knowledge Crafting */}
-        <div className='h-[83rem] flex flex-col justify-center items-center'>
+        <div className='h-[83rem] mt-[5rem] flex flex-col justify-center items-center'>
           <div className='w-[60rem] h-56 text-center text-zinc-900 text-7xl font-medium font-creato-medium leading-[6.25rem]'>
             The Master Alchemist of <br /> Knowledge Crafting
           </div>
@@ -142,8 +142,8 @@ function App() {
           <FeatureCards />
         </div>
         {/* section: Build up your personal knowledge library */}
-        <div className='relative h-[83rem] mt-[12rem] flex flex-col justify-center items-center overflow-x-hidden'>
-          <div className="mt-[12rem] w-[70rem] h-56 text-center text-zinc-900 text-7xl font-medium font-['Creato Display'] leading-[6.25rem]">
+        <div className='relative h-[83rem] flex flex-col justify-center items-center overflow-x-hidden'>
+          <div className=" w-[70rem] h-56 text-center text-zinc-900 text-7xl font-medium font-['Creato Display'] leading-[6.25rem]">
             Build up your personal <br /> knowledge library
           </div>
           <div className='w-[46rem] text-center'>
@@ -183,7 +183,7 @@ function App() {
             {/* add grey color gradient */}
             <div className='absolute inset-0 rounded-3xl bg-gradient-to-b from-transparent to-neutral-50'></div>
           </div>
-          <div className='absolute top-[75rem] icons-list flex justify-evenly items-center gap-12 z-10'>
+          <div className='absolute top-[70rem] icons-list flex justify-evenly items-center gap-12 z-10'>
             <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
             <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
             <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />

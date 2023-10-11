@@ -15,7 +15,7 @@ const GenerationPreview = () => {
           </div>
           {/* grid two columns */}
           <div className='grid grid-cols-3 gap-4 h-[30rem]'>
-            <div className='col-span-2 bg-zinc-100 rounded-lg px-6 py-4'>
+            <div className='col-span-2 bg-zinc-100 rounded-lg px-6 py-4 overflow-scroll h-[30rem]'>
               <div className='flex flex-col'>
                 <div className='flex justify-between items-center'>
                   <div className="w-96 text-blue-700 text-base font-bold font-['Creato Display'] leading-snug tracking-wide">
@@ -85,7 +85,7 @@ const GenerationPreview = () => {
                 </div>
               </div>
             </div>
-            <div className='col-span-1 bg-zinc-100 rounded-lg px-6 py-4 overflow-y-scroll'>
+            <div className='col-span-1 bg-zinc-100 rounded-lg px-6 py-4 overflow-scroll'>
               <div className="w-16 h-8 text-neutral-900 text-xs font-bold font-['Creato Display'] leading-normal tracking-tight">
                 Script
               </div>
@@ -153,19 +153,21 @@ const GenerationPreview = () => {
           </div>
           <div className='w-[6rem] h-8 px-5 py-1 bg-indigo-400 rounded-full justify-center items-center gap-2.5 inline-flex'>
             <div className='text-center'>
-              <span className="text-zinc-100 text-sm font-bold font-['Creato Display'] leading-snug tracking-wide">
+              <span className='text-zinc-100 text-sm font-bold font-creato-regular leading-snug tracking-wide'>
                 6{' '}
               </span>
-              <span className="text-zinc-100 text-sm font-normal font-['Creato Display'] leading-snug tracking-wide">
+              <span className='text-zinc-100 text-sm font-normal font-creato-regular leading-snug tracking-wide'>
                 of
               </span>
-              <span className="text-zinc-100 text-sm font-bold font-['Creato Display'] leading-snug tracking-wide">
+              <span className='text-zinc-100 text-sm font-bold font-creato-regular leading-snug tracking-wide'>
                 {' '}
                 24
               </span>
             </div>
           </div>
         </div>
+        {/* add grey color gradient */}
+        <div className='absolute inset-0 rounded-3xl bg-gradient-to-b from-transparent to-neutral-50'></div>
       </div>
     </>
   )
