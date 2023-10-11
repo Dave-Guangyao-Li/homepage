@@ -3,6 +3,7 @@ import ScriptIcon from './assets/svgs/script.svg?react'
 import SlidesIcon from './assets/svgs/slides.svg?react'
 import VideoIcon from './assets/svgs/video.svg?react'
 import MedalIcon from './assets/svgs/medal-bronze.svg?react'
+import DrlambdaLogoIcon from './assets/svgs/drlambda-logo.svg?react'
 import Footer from './components/Footer'
 import PricingPlans from './components/PricingPlans'
 import MyProjectExample from './components/MyProjectExample'
@@ -31,6 +32,18 @@ function App() {
       {/* background container */}
       <div className='background w-full relative bg-zinc-100'>
         <div className='fixed nav-bar w-full h-12 bg-neutral-800 text-zinc-100 text-sm flex justify-center items-center p-4 z-50'>
+          {/* company logo */}
+          <div className='company-logo flex justify-center items-center gap-2 py-1'>
+            <div className='w-8 h-8 relative'>
+              <div className='w-6 h-8 left-[3px] -top-[2px] absolute'>
+                <DrlambdaLogoIcon />
+              </div>
+            </div>
+
+            <div className='w-36 h-8 text-zinc-100 text-3xl font-creato-regular leading-7 tracking-[0.035rem]'>
+              DrLambda
+            </div>
+          </div>
           <div className='flex-grow'></div> {/* Empty space-filling div */}
           <div className='menu-items flex gap-5 justify-center'>
             <span className='px-6 py-2'>Feature</span>
