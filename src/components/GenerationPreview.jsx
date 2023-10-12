@@ -3,7 +3,7 @@ import DownloadIcon from '../assets/svgs/tabler_download.svg?react'
 const GenerationPreview = () => {
   return (
     <>
-      <div className='w-[85%] relative bg-indigo-500 rounded-3xl'>
+      <div className='mb-[15rem] w-[85%] relative bg-indigo-500 rounded-3xl'>
         <div className='flex flex-col gap-[1.5rem] justify-center items-center px-[3.5rem] py-[3rem]'>
           <div className='self-end w-auto h-9 px-3.5 py-1 bg-zinc-100 rounded-lg justify-center items-center gap-3 inline-flex'>
             <div className="text-center text-gray-700 text-base font-medium font-['Creato Display'] leading-relaxed tracking-wide">
@@ -37,7 +37,7 @@ const GenerationPreview = () => {
                   {/* Temperature humidity text */}
                   <div className='w-full rounded inline-flex'>
                     <div>
-                      <span className="text-gray-700 text-sm font-bold font-['Creato Display'] leading-tight tracking-tight">
+                      <span className='text-gray-700 text-sm font-bold font-creato-bold leading-tight tracking-tight'>
                         Temperature & Humidity Level <br />
                       </span>
                       {/* humidity list items */}
@@ -78,7 +78,7 @@ const GenerationPreview = () => {
                   </div>
                   <div>
                     <img
-                      className='rounded object-cover w-[20rem] h-[20rem]'
+                      className='rounded object-cover w-[22rem] h-[22rem]'
                       src='src/assets/imgs/flowerimage.png'
                     />
                   </div>

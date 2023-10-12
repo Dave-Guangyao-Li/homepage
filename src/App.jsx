@@ -7,11 +7,7 @@ import DrlambdaLogoIcon from './assets/svgs/drlambda-logo.svg?react'
 // import PdfFileIcon from './assets/svgs/filetypes/pdf-file-icon.svg?react'
 // import GoogleDriveIcon from './assets/svgs/filetypes/google-drive-icon.svg?react'
 import MyProjectsImg from './assets/svgs/my-projects.svg?react'
-import ContentCreationImg from './assets/svgs/content-creation.svg?react'
-import FiletypelogosImg from './assets/svgs/filetypelogos.svg?react'
-import LectureDesignImg from './assets/svgs/lecture-design.svg?react'
-import ResearchSynthesizingImg from './assets/svgs/research-synthesizing.svg?react'
-import SelfLearningImg from './assets/svgs/self-learning.svg?react'
+
 import Footer from './components/Footer'
 import PricingPlans from './components/PricingPlans'
 import MyProjectExample from './components/MyProjectExample'
@@ -111,7 +107,7 @@ function App() {
         </div>
 
         {/* section: The Master Alchemist of Knowledge Crafting */}
-        <div className='h-[83rem] mt-[5rem] flex flex-col justify-center items-center'>
+        <div className='h-[83rem] mt-[12rem] flex flex-col justify-center items-center'>
           <div className='w-[60rem] h-56 text-center text-zinc-900 text-7xl font-medium font-creato-medium leading-[6.25rem]'>
             The Master Alchemist of <br /> Knowledge Crafting
           </div>
@@ -163,7 +159,7 @@ function App() {
           <FeatureCards />
         </div>
         {/* section: Build up your personal knowledge library */}
-        <div className='relative h-[83rem] flex flex-col justify-center items-center overflow-x-hidden'>
+        <div className='relative h-[83rem] mt-[12rem] flex flex-col justify-center items-center overflow-x-hidden'>
           <div className=" w-[70rem] h-56 text-center text-zinc-900 text-7xl font-medium font-['Creato Display'] leading-[6.25rem]">
             Build up your personal <br /> knowledge library
           </div>
