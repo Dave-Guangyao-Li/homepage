@@ -4,6 +4,14 @@ import SlidesIcon from './assets/svgs/slides.svg?react'
 import VideoIcon from './assets/svgs/video.svg?react'
 import MedalIcon from './assets/svgs/medal-bronze.svg?react'
 import DrlambdaLogoIcon from './assets/svgs/drlambda-logo.svg?react'
+// import PdfFileIcon from './assets/svgs/filetypes/pdf-file-icon.svg?react'
+// import GoogleDriveIcon from './assets/svgs/filetypes/google-drive-icon.svg?react'
+import MyProjectsImg from './assets/svgs/my-projects.svg?react'
+import ContentCreationImg from './assets/svgs/content-creation.svg?react'
+import FiletypelogosImg from './assets/svgs/filetypelogos.svg?react'
+import LectureDesignImg from './assets/svgs/lecture-design.svg?react'
+import ResearchSynthesizingImg from './assets/svgs/research-synthesizing.svg?react'
+import SelfLearningImg from './assets/svgs/self-learning.svg?react'
 import Footer from './components/Footer'
 import PricingPlans from './components/PricingPlans'
 import MyProjectExample from './components/MyProjectExample'
@@ -188,26 +196,83 @@ function App() {
             </span>
           </div>
           {/* my projects */}
-          <div className='relative mt-[6.25rem] w-[93rem] h-[39rem] bg-neutral-50 rounded-3xl flex flex-col px-12 py-10 gap-6'>
-            <div className='w-[28rem] opacity-95 text-neutral-800 text-3xl font-bold font-creato-medium leading-10 tracking-wider'>
+          <div className='relative mt-[6.25rem] w-[80%] h-auto bg-white rounded-3xl flex flex-col justify-start items-center px-12 py-10 gap-6'>
+            {/* <div className='w-[28rem] opacity-95 text-neutral-800 text-3xl font-bold font-creato-medium leading-10 tracking-wider'>
               My Projects
             </div>
             <MyProjectExample />
-            {/* add grey color gradient */}
-            <div className='absolute inset-0 rounded-3xl bg-gradient-to-b from-transparent to-neutral-50'></div>
-          </div>
-          <div className='absolute top-[70rem] icons-list flex justify-evenly items-center gap-12 z-10'>
-            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
-            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
-            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
-            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
-            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
-            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
-            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
-            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
-            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
-            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
-            <div className='w-32 h-32 bg-white rounded-full border border-gray-200' />
+            <div className='absolute inset-0 rounded-3xl bg-gradient-to-b from-transparent to-neutral-50'></div> */}
+            <div>
+              <MyProjectsImg className='object-contain w-full h-full' />
+            </div>
+            <div className='absolute top-[90%] icons-list flex justify-evenly items-center gap-12 z-10'>
+              <div className='w-32 h-32 bg-white rounded-full border border-gray-200 flex justify-center items-center shadow-2xl'>
+                <img
+                  className='w-[4rem] h-[4rem]'
+                  src='src/assets/imgs/pdf-file-icon.png'
+                />
+              </div>
+              <div className='w-32 h-32 bg-white rounded-full border border-gray-200 flex justify-center items-center shadow-2xl'>
+                <img
+                  className='w-[5rem] h-[5rem]'
+                  src='src/assets/imgs/csv-file-icon.png'
+                />
+              </div>
+              <div className='w-32 h-32 bg-white rounded-full border border-gray-200 flex justify-center items-center shadow-2xl'>
+                <img
+                  className='w-[5rem] h-[5rem]'
+                  src='src/assets/imgs/word-file-icon.png'
+                />
+              </div>
+              <div className='w-32 h-32 bg-white rounded-full border border-gray-200 flex justify-center items-center shadow-2xl'>
+                <img
+                  className='w-[4rem] h-[4rem]'
+                  src='src/assets/imgs/box-file-icon.png'
+                />
+              </div>
+              <div className='w-32 h-32 bg-white rounded-full border border-gray-200 flex justify-center items-center shadow-2xl'>
+                <img
+                  className='w-[8rem] h-[8rem]'
+                  src='src/assets/imgs/slack-file-icon.png'
+                />
+              </div>
+              <div className='w-32 h-32 bg-white rounded-full border border-gray-200 flex justify-center items-center shadow-2xl'>
+                <img
+                  className='w-[4rem] h-[4rem]'
+                  src='src/assets/imgs/dropbox-file-icon.png'
+                />
+              </div>
+              <div className='w-32 h-32 bg-white rounded-full border border-gray-200 flex justify-center items-center shadow-2xl'>
+                <img
+                  className='w-[5rem] h-[5rem]'
+                  src='src/assets/imgs/ppt-file-icon.png'
+                />
+              </div>
+              <div className='w-32 h-32 bg-white rounded-full border border-gray-200 flex justify-center items-center shadow-2xl'>
+                <img
+                  className='w-[4rem] h-[4rem]'
+                  src='src/assets/imgs/unknown-file-icon.png'
+                />
+              </div>
+              <div className='w-32 h-32 bg-white rounded-full border border-gray-200 flex justify-center items-center shadow-2xl'>
+                <img
+                  className='w-[5rem] h-[5rem]'
+                  src='src/assets/imgs/google-drive-icon.png'
+                />
+              </div>
+              <div className='w-32 h-32 bg-white rounded-full border border-gray-200 flex justify-center items-center shadow-2xl'>
+                <img
+                  className='w-[4rem] h-[4rem]'
+                  src='src/assets/imgs/pdf-file-icon.png'
+                />
+              </div>
+              <div className='w-32 h-32 bg-white rounded-full border border-gray-200 flex justify-center items-center shadow-2xl'>
+                <img
+                  className='w-[5rem] h-[5rem]'
+                  src='src/assets/imgs/csv-file-icon.png'
+                />
+              </div>
+            </div>
           </div>
         </div>
 
