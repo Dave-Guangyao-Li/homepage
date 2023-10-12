@@ -9,7 +9,7 @@ import SelfLearningImg from '../assets/imgs/self-learning.png'
 const FeatureCards = () => {
   return (
     <>
-      <div className='mb-[12rem] grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4'>
+      <div className='mb-[30rem] grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4'>
         <div className='w-[35rem] bg-gray-200 rounded-3xl flex flex-col px-8 py-6'>
           <div className='w-[27rem] h-[3.75rem] opacity-95 text-neutral-800 text-3xl font-bold font-creato-bold leading-10 tracking-wide'>
             Content Creation
