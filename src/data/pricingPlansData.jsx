@@ -15,6 +15,7 @@ export const pricingPlansMonthlyData = [
     price: '$9.9',
     frequency: '/month',
     features: [
+      'All features in Free',
       '100 credits a month',
       'Connect to GPT 4',
       'Remove water mark',
@@ -27,14 +28,23 @@ export const pricingPlansMonthlyData = [
     title: '* Pro',
     price: '$39.9',
     frequency: '/month',
-    features: ['Unlimited usage', 'Direct customer support'],
+    features: [
+      'All features in Plus',
+      'Unlimited usage',
+      'Direct customer support',
+    ],
     cta: 'Subscribe',
   },
   {
     title: 'ENTERPRISE',
     price: 'Upon Request',
     frequency: '',
-    features: ['Contact us at contact@drlambda.ai for a demo or quote'],
+    features: [
+      'All features in Pro',
+      'Shared workspace',
+      'Customized branding',
+      'Want more feature? Contact us at contact@drlambda.ai for a demo or quote',
+    ],
     cta: 'Contact Us',
   },
 ]
@@ -53,9 +63,10 @@ export const pricingPlansYearlyData = [
   },
   {
     title: 'Plus',
-    price: '$8',
-    frequency: '/month',
+    price: '$8.25',
+    frequency: '/month ($99 billed annually)',
     features: [
+      'All features in Free',
       '100 credits a month',
       'Connect to GPT 4',
       'Remove water mark',
@@ -66,16 +77,25 @@ export const pricingPlansYearlyData = [
   },
   {
     title: '* Pro',
-    price: '$33',
-    frequency: '/month',
-    features: ['Unlimited usage', 'Direct customer support'],
+    price: '$33.25',
+    frequency: '/month ($399 billed annually)',
+    features: [
+      'All features in Plus',
+      'Unlimited usage',
+      'Direct customer support',
+    ],
     cta: 'Subscribe',
   },
   {
     title: 'ENTERPRISE',
     price: 'Upon Request',
     frequency: '',
-    features: ['Contact us at contact@drlambda.ai for a demo or quote'],
+    features: [
+      'All features in Pro',
+      'Shared workspace',
+      'Customized branding',
+      'Want more feature? Contact us at contact@drlambda.ai for a demo or quote',
+    ],
     cta: 'Contact Us',
   },
 ]

@@ -65,7 +65,11 @@ const PricingPlans = ({ pricingPlansData }) => {
               </div>
             )}
           </div>
-          <div className='w-[264px] h-[204px] py-2 flex-col justify-start items-start inline-flex border-t-2'>
+          <div
+            className={`w-[264px] h-[204px] py-2 flex-col justify-start items-start inline-flex ${
+              plan.title !== 'ENTERPRISE' ? 'border-t-2' : ''
+            }`}
+          >
             {plan.features.map((feature, index) => (
               <div
                 key={index}
@@ -74,20 +78,20 @@ const PricingPlans = ({ pricingPlansData }) => {
                 <div className='w-[20.74px] h-[20.74px] relative'>
                   <div className='w-[20.74px] h-[20.74px] left-0 top-0 absolute'>
                     {' '}
-                    <div
+                    {/* <div
                       className={`${
                         plan.title === 'ENTERPRISE'
                           ? 'w-[5.19px] h-[5.19px] left-[7.78px] top-[7.78px] absolute'
                           : ''
                       }`}
-                    >
-                      {plan.title === 'Starter' && <StarterIcon />}{' '}
-                      {/* Render the appropriate icon based on plan */}
-                      {plan.title === '* Pro' && <ProIcon />}
-                      {plan.title === 'Plus' && <PlusIcon />}
-                      {plan.title === 'ENTERPRISE' && <EnterpriseIcon />}
-                    </div>
+                    > */}
+                    {plan.title === 'Starter' && <StarterIcon />}{' '}
+                    {/* Render the appropriate icon based on plan */}
+                    {plan.title === '* Pro' && <ProIcon />}
+                    {plan.title === 'Plus' && <PlusIcon />}
+                    {plan.title === 'ENTERPRISE' && <EnterpriseIcon />}
                   </div>
+                  {/* </div> */}
                 </div>
                 <div
                   className={`w-[238.52px] text-sm font-creato-regular leading-snug tracking-[0.0175rem] ${
